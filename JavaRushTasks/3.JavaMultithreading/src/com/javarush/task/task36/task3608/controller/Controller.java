@@ -22,4 +22,9 @@ public class Controller {
     public void setUsersView(UsersView usersView) {
         this.usersView = usersView;
     }
+
+    public void onShowAllDeletedUsers() {
+        this.model.loadDeletedUsers();
+        usersView.refresh(model.getModelData());
+    }
 }

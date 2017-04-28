@@ -24,4 +24,9 @@ public class FakeModel implements Model {
         users.add(new User("3", 3,3));
         this.modelData.setUsers(users);
     }
+
+    @Override
+    public void loadDeletedUsers() {
+        throw new UnsupportedOperationException();
+    }
 }
