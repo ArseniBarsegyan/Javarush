@@ -36,4 +36,8 @@ public class UsersView implements View {
     public void fireEventShowDeletedUsers() {
         this.controller.onShowAllDeletedUsers();
     }
+
+    public void fireEventOpenUserEditForm(long id) {
+        this.controller.onOpenUserEditForm(id);
+    }
 }
