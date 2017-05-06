@@ -1,18 +1,13 @@
 package com.javarush.task.task25.task2505;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-/*
+/* 
 Без дураков
 */
 public class Solution {
-    private static Logger log = Logger.getLogger(MyThread.class.getName());
 
     public static void main(String[] args) {
         MyThread myThread = new Solution().new MyThread("super secret key");
         myThread.start();
-        myThread.interrupt();
     }
 
     public class MyThread extends Thread {
@@ -21,7 +16,7 @@ public class Solution {
         public MyThread(String secretKey) {
             this.secretKey = secretKey;
             setUncaughtExceptionHandler(new MyUncaughtExceptionHandler());
-            setDaemon(true);
+            setDaemon(false);
         }
 
         @Override
@@ -30,10 +25,7 @@ public class Solution {
         }
 
         private class MyUncaughtExceptionHandler implements UncaughtExceptionHandler {
-            String message;
-
             public MyUncaughtExceptionHandler() {
-
             }
 
             @Override
@@ -41,13 +33,12 @@ public class Solution {
                 try {
                     Thread.sleep(500);
                 } catch (InterruptedException e1) {
-
+                    e1.printStackTrace();
                 }
-                message = String.format("%s, %s, ", secretKey, Thread.currentThread().getName());
-                System.out.println(message + " " + e.getMessage());
-                log.log(Level.ALL, message + " " + e.getMessage());
+                System.out.println(String.format("%s, %s, %s", secretKey, t.getName(), e.getMessage()));
             }
         }
     }
+
 }
 
