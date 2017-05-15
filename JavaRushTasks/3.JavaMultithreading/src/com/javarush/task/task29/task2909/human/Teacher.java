@@ -19,7 +19,8 @@ public class Teacher extends UniversityPerson implements Alive {
 
     }
 
-    public void printData() {
-        System.out.println("Преподаватель: " + name);
+    @Override
+    public String getPosition() {
+        return "Преподаватель";
     }
 }
