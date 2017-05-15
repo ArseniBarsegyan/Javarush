@@ -3,7 +3,7 @@ package com.javarush.task.task29.task2909.human;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Teacher extends Human {
+public class Teacher extends Human implements Alive {
     private int numberOfStudents;
     private String university;
 
