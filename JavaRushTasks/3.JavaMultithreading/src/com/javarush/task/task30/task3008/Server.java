@@ -3,6 +3,7 @@ package com.javarush.task.task30.task3008;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.SocketAddress;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -17,6 +18,23 @@ public class Server {
 
         public Handler(Socket socket) {
             this.socket = socket;
+        }
+
+        public void run() {
+            SocketAddress address = socket.getRemoteSocketAddress();
+            ConsoleHelper.writeMessage(String.format("Установлено соединение с удаленным адресом %s", address));
+            try {
+                Connection connection = new Connection(socket);
+                String userName = serverHandshake(connection);
+                sendBroadcastMessage(new Message(MessageType.USER_ADDED, userName));
+                sendListOfUsers(connection, userName);
+                serverMainLoop(connection, userName);
+                connectionMap.remove(userName);
+                sendBroadcastMessage(new Message(MessageType.USER_REMOVED, userName));
+                ConsoleHelper.writeMessage("Соединение с удаленным адресом закрыто");
+            } catch (IOException | ClassNotFoundException e) {
+                ConsoleHelper.writeMessage("Ошибка обмена данными с удаленным сервером");
+            }
         }
 
         private String serverHandshake(Connection connection) throws IOException, ClassNotFoundException {
