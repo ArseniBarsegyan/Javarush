@@ -40,6 +40,18 @@ public class Server {
                 }
             }
         }
+
+        private void serverMainLoop(Connection connection, String userName) throws IOException, ClassNotFoundException {
+            Message message;
+            for (;;) {
+                message = connection.receive();
+                if (message.getType() == (MessageType.TEXT)) {
+                    sendBroadcastMessage(new Message(MessageType.TEXT, String.format("%s: %s", userName, message.getData())));
+                } else {
+                    ConsoleHelper.writeMessage("Error!");
+                }
+            }
+        }
     }
 
     public static void sendBroadcastMessage(Message message) {
