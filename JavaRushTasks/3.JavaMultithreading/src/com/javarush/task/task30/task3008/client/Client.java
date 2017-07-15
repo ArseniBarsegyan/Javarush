@@ -5,6 +5,7 @@ import com.javarush.task.task30.task3008.Message;
 import com.javarush.task.task30.task3008.MessageType;
 
 import java.io.IOException;
+import java.net.Socket;
 
 /**
  * Created by Administrator on 15.07.2017.
@@ -14,6 +15,16 @@ public class Client {
     private volatile boolean clientConnected = false;
 
     public class SocketThread extends Thread {
+        public void run() {
+            try {
+                Client.this.connection = new Connection(new Socket(getServerAddress(), getServerPort()));
+                clientHandshake();
+                clientMainLoop();
+            } catch (IOException | ClassNotFoundException e) {
+                notifyConnectionStatusChanged(false);
+            }
+        }
+
         protected void processIncomingMessage(String message) {
             ConsoleHelper.writeMessage(message);
         }
