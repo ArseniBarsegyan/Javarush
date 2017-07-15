@@ -16,6 +16,40 @@ public class Client {
     public class SocketThread extends Thread {
     }
 
+    public void run() {
+        SocketThread socketThread = getSocketThread();
+        socketThread.setDaemon(true);
+        socketThread.start();
+        synchronized (this) {
+            try {
+                this.wait();
+            } catch (InterruptedException e) {
+                ConsoleHelper.writeMessage("Возникло иключение");
+            }
+        }
+
+        if (clientConnected) {
+            ConsoleHelper.writeMessage("ConsoleHelper.writeMessage(Соединение установлено. Для выхода наберите команду ‘exit’.)");
+        } else {
+            ConsoleHelper.writeMessage("Произошла ошибка во время работы клиента.");
+        }
+        String command;
+        while (clientConnected) {
+            command = ConsoleHelper.readString();
+            if (command.equals("exit")) {
+                break;
+            }
+            if (shouldSendTextFromConsole()) {
+                sendTextMessage(command);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Client client = new Client();
+        client.run();
+    }
+
     protected String getServerAddress() {
         ConsoleHelper.writeMessage("Укажите адрес сервера");
         return ConsoleHelper.readString();
