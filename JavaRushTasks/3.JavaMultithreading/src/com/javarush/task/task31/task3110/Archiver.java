@@ -1,5 +1,7 @@
 package com.javarush.task.task31.task3110;
 
+import com.javarush.task.task31.task3110.command.ExitCommand;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,6 +21,9 @@ public class Archiver {
 
             System.out.println("Enter output file path");
             manager.createZip(Paths.get(reader.readLine()).toAbsolutePath());
+
+            ExitCommand exitCommand = new ExitCommand();
+            exitCommand.execute();
         } catch (IOException e) {
             e.printStackTrace();
         } catch (Exception e) {
