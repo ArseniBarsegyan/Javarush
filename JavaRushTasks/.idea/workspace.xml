@@ -71,9 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task29/task2909/human/StudentsDataBase.java" />
-        <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task29/task2909/human/Student.java" />
-        <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task29/task2909/human/Worker.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task29/task2909/human/BloodGroup.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task29/task2909/human/Soldier.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task29/task2909/human/Human.java" />
@@ -122,6 +119,9 @@
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task27/task2709/TransferObject.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task31/task3110/Archiver.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task31/task3110/ZipFileManager.java" />
+        <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task31/task3110/Условие.jrtc" />
+        <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task31/task3110/Operation.java" />
+        <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task31/task3110/ConsoleHelper.java" />
       </list>
     </option>
   </component>
@@ -902,12 +902,12 @@
       <workItem from="1500280032752" duration="1779000" />
       <workItem from="1500285647006" duration="411000" />
       <workItem from="1500311786020" duration="1333000" />
-      <workItem from="1500361907718" duration="2672000" />
+      <workItem from="1500361907718" duration="3271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82832000" />
+    <option name="totallyTimeSpent" value="83431000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -998,8 +998,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task26/task2612/Условие.jrtc" />
-    <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task26/task2612/Solution.java" />
     <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task26/task2610/Solution.java" />
     <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task26/task2610/Условие.jrtc" />
     <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task26/task2610/Consumer.java" />
@@ -1110,11 +1108,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Валидация">
-      <provider selected="true" editor-type-id="EditorTypeId">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task31/task3110/ZipFileManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
@@ -1123,6 +1116,31 @@
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task31/task3110/Operation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task31/task3110/ConsoleHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Валидация">
+      <provider selected="true" editor-type-id="EditorTypeId">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task31/task3110/Условие.jrtc">
