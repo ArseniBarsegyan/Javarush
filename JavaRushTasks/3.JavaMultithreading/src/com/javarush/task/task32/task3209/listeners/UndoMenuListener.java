@@ -10,22 +10,37 @@ import javax.swing.event.MenuListener;
  * Created by Administrator on 14.08.2017.
  */
 public class UndoMenuListener implements MenuListener {
-    public UndoMenuListener(View view, JMenuItem undoMenuItem, JMenuItem redoMenuItem) {
+    private View view;
+    private JMenuItem undoMenuItem;
+    private JMenuItem redoMenuItem;
 
+    public UndoMenuListener(View view, JMenuItem undoMenuItem, JMenuItem redoMenuItem) {
+        this.view = view;
+        this.undoMenuItem = undoMenuItem;
+        this.redoMenuItem = redoMenuItem;
     }
 
     @Override
     public void menuSelected(MenuEvent e) {
+        if (view.canUndo()) {
+            undoMenuItem.setEnabled(true);
+        } else {
+            undoMenuItem.setEnabled(false);
+        }
 
+        if (view.canRedo()) {
+            redoMenuItem.setEnabled(true);
+        } else {
+            redoMenuItem.setEnabled(false);
+        }
     }
 
     @Override
     public void menuDeselected(MenuEvent e) {
-
     }
 
     @Override
     public void menuCanceled(MenuEvent e) {
-
     }
+
 }
