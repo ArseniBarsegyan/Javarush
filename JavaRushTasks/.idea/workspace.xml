@@ -43,29 +43,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/View.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="148" column="64" lean-forward="true" selection-start-line="148" selection-start-column="64" selection-end-line="148" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3823#3824#0" expanded="true" />
-                <element signature="e#3880#3881#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="398">
+              <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#416#417#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,15 +130,15 @@
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/actions/TextEditMenuListener.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/listeners/UndoMenuListener.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/listeners/UndoListener.java" />
-        <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/Условие.jrtc" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/actions/RedoAction.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/actions/UndoAction.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/actions/StrikeThroughAction.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/actions/SubscriptAction.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/actions/SuperscriptAction.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/listeners/TextEditMenuListener.java" />
-        <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/Controller.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/View.java" />
+        <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/Условие.jrtc" />
+        <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/Controller.java" />
       </list>
     </option>
   </component>
@@ -980,12 +964,12 @@
       <workItem from="1502701969915" duration="1151000" />
       <workItem from="1502715324636" duration="2026000" />
       <workItem from="1502723121031" duration="7133000" />
-      <workItem from="1502780457866" duration="5113000" />
+      <workItem from="1502780457866" duration="6030000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130221000" />
+    <option name="totallyTimeSpent" value="131138000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1316,8 +1300,8 @@
         <state relative-caret-position="170">
           <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
           <folding>
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="false" />
+            <element signature="e#406#407#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1389,12 +1373,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task32/task3209/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        <state relative-caret-position="398">
+          <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
           </folding>
         </state>
       </provider>

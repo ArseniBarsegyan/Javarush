@@ -1,6 +1,13 @@
 package com.javarush.task.task32.task3209;
 
+import com.javarush.task.task32.task3209.listeners.UndoListener;
+
+import javax.swing.event.DocumentListener;
+import javax.swing.event.UndoableEditEvent;
+import javax.swing.text.AbstractDocument;
+import javax.swing.text.Document;
 import javax.swing.text.html.HTMLDocument;
+import javax.swing.text.html.HTMLEditorKit;
 import java.io.File;
 
 /**
@@ -32,5 +39,15 @@ public class Controller {
 
     public void exit() {
         System.exit(0);
+    }
+
+    public void resetDocument() {
+        if (document != null) {
+            document.removeUndoableEditListener(view.getUndoListener());
+        }
+        HTMLEditorKit kit = new HTMLEditorKit();
+        Document doc = kit.createDefaultDocument();
+        doc.addUndoableEditListener(view.getUndoListener());
+        view.update();
     }
 }
