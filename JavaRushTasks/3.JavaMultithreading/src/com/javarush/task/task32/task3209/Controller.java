@@ -1,13 +1,11 @@
 package com.javarush.task.task32.task3209;
 
+import javax.swing.*;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
 import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
-import java.io.File;
-import java.io.IOException;
-import java.io.StringReader;
-import java.io.StringWriter;
+import java.io.*;
 
 /**
  * Created by arseniy.barsegyan on 14.08.2017.
@@ -53,12 +51,13 @@ public class Controller {
 
     public void setPlainText(String text) {
         resetDocument();
-        StringReader reader = new StringReader(text);
-        HTMLEditorKit editorKit = new HTMLEditorKit();
-        try {
-            editorKit.read(reader, document, 0);
-        } catch (IOException | BadLocationException e) {
-            ExceptionHandler.log(e);
+        try (StringReader reader = new StringReader(text)) {
+            HTMLEditorKit editorKit = new HTMLEditorKit();
+            try {
+                editorKit.read(reader, document, 0);
+            } catch (IOException | BadLocationException e) {
+                ExceptionHandler.log(e);
+            }
         }
     }
 
@@ -82,5 +81,25 @@ public class Controller {
     }
     public void openDocument() {}
     public void saveDocument() {}
-    public void saveDocumentAs() {}
+
+    public void saveDocumentAs() {
+        view.selectHtmlTab();
+        JFileChooser chooser = new JFileChooser();
+        HTMLFileFilter fileFilter = new HTMLFileFilter();
+        chooser.setFileFilter(fileFilter);
+        int result = chooser.showSaveDialog(view);
+        if (result == 0) {
+            currentFile = chooser.getSelectedFile();
+            view.setTitle(currentFile.getName());
+            try {
+                FileWriter writer = new FileWriter(currentFile);
+                HTMLEditorKit editorKit = new HTMLEditorKit();
+                editorKit.write(writer, document, 0, document.getLength());
+                writer.flush();
+            } catch (IOException | BadLocationException e) {
+                ExceptionHandler.log(e);
+            }
+        }
+
+    }
 }
