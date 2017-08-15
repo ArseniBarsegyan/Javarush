@@ -1,10 +1,5 @@
 package com.javarush.task.task32.task3209;
 
-import com.javarush.task.task32.task3209.listeners.UndoListener;
-
-import javax.swing.event.DocumentListener;
-import javax.swing.event.UndoableEditEvent;
-import javax.swing.text.AbstractDocument;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
 import javax.swing.text.html.HTMLDocument;
@@ -12,6 +7,7 @@ import javax.swing.text.html.HTMLEditorKit;
 import java.io.File;
 import java.io.IOException;
 import java.io.StringReader;
+import java.io.StringWriter;
 
 /**
  * Created by arseniy.barsegyan on 14.08.2017.
@@ -63,5 +59,16 @@ public class Controller {
         } catch (IOException | BadLocationException e) {
             ExceptionHandler.log(e);
         }
+    }
+
+    public String getPlainText() {
+        StringWriter writer = new StringWriter();
+        HTMLEditorKit editorKit = new HTMLEditorKit();
+        try {
+            editorKit.write(writer, document, 0, document.getLength());
+        } catch (IOException | BadLocationException e) {
+            ExceptionHandler.log(e);
+        }
+        return writer.toString();
     }
 }
