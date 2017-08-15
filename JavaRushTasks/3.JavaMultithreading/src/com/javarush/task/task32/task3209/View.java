@@ -5,6 +5,7 @@ import com.javarush.task.task32.task3209.listeners.TabbedPaneChangeListener;
 import com.javarush.task.task32.task3209.listeners.UndoListener;
 
 import javax.swing.*;
+import javax.swing.text.html.HTMLDocument;
 import javax.swing.undo.CannotRedoException;
 import javax.swing.undo.CannotUndoException;
 import javax.swing.undo.UndoManager;
@@ -131,5 +132,20 @@ public class View extends JFrame implements ActionListener {
 
     public boolean isHtmlTabSelected() {
         return tabbedPane.getSelectedIndex() == 0;
+    }
+
+    public void selectHtmlTab() {
+        tabbedPane.setSelectedIndex(0);
+        resetUndo();
+    }
+
+    public void update() {
+        HTMLDocument htmlDocument = controller.getDocument();
+        htmlTextPane.setDocument(htmlDocument);
+    }
+
+    public void showAbout() {
+        JOptionPane.showMessageDialog(tabbedPane, "Created by Arseni Barsegyan, 15.08.2017",
+                "Info message",JOptionPane.INFORMATION_MESSAGE);
     }
 }
