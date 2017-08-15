@@ -79,8 +79,44 @@ public class Controller {
         view.resetUndo();
         currentFile = null;
     }
-    public void openDocument() {}
-    public void saveDocument() {}
+
+    public void openDocument() {
+        view.selectHtmlTab();
+        JFileChooser chooser = new JFileChooser();
+        HTMLFileFilter fileFilter = new HTMLFileFilter();
+        chooser.setFileFilter(fileFilter);
+        int result = chooser.showOpenDialog(view);
+        if (result == 0) {
+            currentFile = chooser.getSelectedFile();
+            resetDocument();
+            view.setTitle(currentFile.getName());
+            try {
+                FileReader reader = new FileReader(currentFile);
+                HTMLEditorKit editorKit = new HTMLEditorKit();
+                editorKit.read(reader, document, 0);
+                view.resetUndo();
+                reader.close();
+            } catch (IOException | BadLocationException e) {
+                ExceptionHandler.log(e);
+            }
+        }
+    }
+
+    public void saveDocument() {
+        view.selectHtmlTab();
+        if (currentFile != null) {
+            try {
+                FileWriter writer = new FileWriter(currentFile);
+                HTMLEditorKit editorKit = new HTMLEditorKit();
+                editorKit.write(writer, document, 0, document.getLength());
+                writer.flush();
+            } catch (IOException | BadLocationException e) {
+                ExceptionHandler.log(e);
+            }
+        } else {
+            saveDocumentAs();
+        }
+    }
 
     public void saveDocumentAs() {
         view.selectHtmlTab();
