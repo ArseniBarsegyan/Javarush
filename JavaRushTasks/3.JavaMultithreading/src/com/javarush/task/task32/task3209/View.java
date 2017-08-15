@@ -100,7 +100,15 @@ public class View extends JFrame implements ActionListener {
         pack();
     }
 
-    public void selectedTabChanged() {}
+    public void selectedTabChanged() {
+        int currentElementIndex = tabbedPane.getSelectedIndex();
+        if (currentElementIndex == 0) {
+            controller.setPlainText(plainTextPane.getText());
+        } else {
+            plainTextPane.setText(controller.getPlainText());
+        }
+        resetUndo();
+    }
 
     public boolean canUndo() {
         return undoManager.canUndo();
