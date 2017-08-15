@@ -71,4 +71,9 @@ public class Controller {
         }
         return writer.toString();
     }
+
+    public void createNewDocument() {}
+    public void openDocument() {}
+    public void saveDocument() {}
+    public void saveDocumentAs() {}
 }
