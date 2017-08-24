@@ -36,38 +36,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Условие.jrtc" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Условие.jrtc" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task20/task2028/Условие.jrtc">
           <provider selected="true" editor-type-id="EditorTypeId">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomTree.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task20/task2028/CustomTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
-                <element signature="e#845#846#0" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="e#966#967#0" expanded="true" />
-                <element signature="e#1023#1024#0" expanded="true" />
-                <element signature="e#1076#1077#0" expanded="true" />
-                <element signature="e#1133#1134#0" expanded="true" />
-                <element signature="e#1210#1211#0" expanded="true" />
-                <element signature="e#1267#1268#0" expanded="true" />
-                <element signature="e#1343#1344#0" expanded="true" />
-                <element signature="e#1400#1401#0" expanded="true" />
-                <element signature="e#1486#1487#0" expanded="true" />
-                <element signature="e#1543#1544#0" expanded="true" />
-                <element signature="e#1582#1583#0" expanded="true" />
-                <element signature="e#1606#1607#0" expanded="true" />
-              </folding>
-            </state>
           </provider>
         </entry>
       </file>
@@ -941,12 +913,12 @@
       <workItem from="1503393107525" duration="6774000" />
       <workItem from="1503556983057" duration="1902000" />
       <workItem from="1503559364814" duration="6866000" />
-      <workItem from="1503570733834" duration="2021000" />
+      <workItem from="1503570733834" duration="4102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164957000" />
+    <option name="totallyTimeSpent" value="167038000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1335,14 +1307,9 @@
         <state relative-caret-position="17">
           <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task20/task2028/Условие.jrtc">
-      <provider selected="true" editor-type-id="EditorTypeId">
-        <state />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Валидация">
@@ -1352,28 +1319,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task20/task2028/CustomTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="425">
+          <caret line="34" column="77" lean-forward="false" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-            <element signature="e#1210#1211#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1486#1487#0" expanded="true" />
-            <element signature="e#1543#1544#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-            <element signature="e#1606#1607#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task20/task2028/Условие.jrtc">
+      <provider selected="true" editor-type-id="EditorTypeId">
+        <state />
       </provider>
     </entry>
   </component>
