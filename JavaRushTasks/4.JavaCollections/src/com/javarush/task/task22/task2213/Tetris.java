@@ -4,6 +4,9 @@ package com.javarush.task.task22.task2213;
  * Created by arseniy.barsegyan on 29.08.2017.
  */
 public class Tetris {
+    private Field field;
+    private Figure figure;
+
     public static void main(String[] args) {
 
     }
