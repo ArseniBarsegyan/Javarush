@@ -36,12 +36,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Условие.jrtc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task22/task2213/Условие.jrtc">
+          <provider selected="true" editor-type-id="EditorTypeId">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Tetris.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task22/task2213/Tetris.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="153">
+              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+              <folding>
+                <element signature="e#230#231#0" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -918,12 +933,12 @@
       <workItem from="1503559364814" duration="6866000" />
       <workItem from="1503570733834" duration="4102000" />
       <workItem from="1503746228052" duration="10114000" />
-      <workItem from="1504008999288" duration="164000" />
+      <workItem from="1504008999288" duration="248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177316000" />
+    <option name="totallyTimeSpent" value="177400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1316,9 +1331,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task22/task2213/Tetris.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="153">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
