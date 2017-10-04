@@ -22,8 +22,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Условие.jrtc" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Space.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/Space.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Условие.jrtc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/Условие.jrtc">
+          <provider selected="true" editor-type-id="EditorTypeId">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/BaseObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="54" column="68" lean-forward="true" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
+              <folding>
+                <element signature="e#890#891#0" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Валидация" pinned="false" current-in-tab="true">
+        <entry file="file://C:/TEMP/Валидация">
           <provider selected="true" editor-type-id="EditorTypeId">
             <state />
           </provider>
@@ -73,13 +103,13 @@
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task33/task3307/Solution.java" />
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task33/task3308/Solution.java" />
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task33/task3308/Shop.java" />
-        <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/Условие.jrtc" />
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/Space.java" />
-        <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/BaseObject.java" />
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/Bomb.java" />
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/Rocket.java" />
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/SpaceShip.java" />
         <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/Ufo.java" />
+        <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/Условие.jrtc" />
+        <option value="$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/BaseObject.java" />
       </list>
     </option>
   </component>
@@ -770,12 +800,12 @@
       <workItem from="1485177835943" duration="100000" />
       <workItem from="1506533147383" duration="3538000" />
       <workItem from="1506702078178" duration="2323000" />
-      <workItem from="1507144588641" duration="919000" />
+      <workItem from="1507144588641" duration="1235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11372000" />
+    <option name="totallyTimeSpent" value="11688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1372" height="744" extended-state="0" />
@@ -1096,29 +1126,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/BaseObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/Bomb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1138,14 +1145,6 @@
             <element signature="e#189#190#0" expanded="true" />
             <element signature="e#224#225#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1171,12 +1170,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/TEMP/Валидация">
+    <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/Условие.jrtc">
       <provider selected="true" editor-type-id="EditorTypeId">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/Условие.jrtc">
+    <entry file="file://$PROJECT_DIR$/4.JavaCollections/src/com/javarush/task/task25/task2515/BaseObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="54" column="68" lean-forward="true" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
+          <folding>
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/TEMP/Валидация">
       <provider selected="true" editor-type-id="EditorTypeId">
         <state />
       </provider>
