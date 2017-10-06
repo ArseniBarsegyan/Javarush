@@ -12,6 +12,7 @@ public class Space {
     private ArrayList<Ufo> ufos;
     private ArrayList<Rocket> rockets;
     private ArrayList<Bomb> bombs;
+    public static Space game;
 
     public Space(int width, int height){
         this.width = width;
@@ -54,6 +55,5 @@ public class Space {
     public void sleep(int ms){}
 
     public static void main(String[] args){
-
     }
 }
