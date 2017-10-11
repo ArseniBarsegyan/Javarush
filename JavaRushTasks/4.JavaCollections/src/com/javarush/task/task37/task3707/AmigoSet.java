@@ -1,5 +1,8 @@
 package com.javarush.task.task37.task3707;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.omg.CORBA.OBJ_ADAPTER;
+
 import java.io.Serializable;
 import java.util.*;
 import java.util.function.Consumer;
@@ -10,6 +13,20 @@ import java.util.stream.Stream;
  * Created by Administrator on 11.10.2017.
  */
 public class AmigoSet<E> extends AbstractSet implements Set, Serializable, Cloneable {
+    private static final Object PRESENT = new Object();
+    private transient HashMap<E, Object> map;
+
+    public AmigoSet() {
+        this.map = new HashMap<>();
+    }
+
+    public AmigoSet(Collection<? extends E> collection) {
+        int size = (int) Math.ceil(Math.max(16, (collection.size()/.75f)));
+        this.map = new HashMap<>(size);
+        for (E e : collection) {
+            this.map.put(e, PRESENT);
+        }
+    }
 
     @Override
     public Iterator<E> iterator() {
@@ -18,7 +35,6 @@ public class AmigoSet<E> extends AbstractSet implements Set, Serializable, Clone
 
     @Override
     public void forEach(Consumer action) {
-
     }
 
     @Override
@@ -38,7 +54,7 @@ public class AmigoSet<E> extends AbstractSet implements Set, Serializable, Clone
 
     @Override
     public boolean add(Object o) {
-        return false;
+        return map.put((E)o, PRESENT) == null;
     }
 
     @Override
