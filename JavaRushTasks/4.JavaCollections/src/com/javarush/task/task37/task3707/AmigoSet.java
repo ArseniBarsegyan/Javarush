@@ -1,8 +1,5 @@
 package com.javarush.task.task37.task3707;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.omg.CORBA.OBJ_ADAPTER;
-
 import java.io.Serializable;
 import java.util.*;
 import java.util.function.Consumer;
@@ -30,7 +27,7 @@ public class AmigoSet<E> extends AbstractSet implements Set, Serializable, Clone
 
     @Override
     public Iterator<E> iterator() {
-        return null;
+        return this.map.keySet().iterator();
     }
 
     @Override
@@ -74,6 +71,27 @@ public class AmigoSet<E> extends AbstractSet implements Set, Serializable, Clone
 
     @Override
     public int size() {
-        return 0;
+        return this.map.size();
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return this.map.isEmpty();
+    }
+
+    @Override
+    public boolean contains(Object o) {
+        return this.map.containsKey(o);
+    }
+
+    @Override
+    public void clear() {
+        this.map.clear();
+    }
+
+    @Override
+    public boolean remove(Object o) {
+        this.map.remove(o);
+        return true;
     }
 }
