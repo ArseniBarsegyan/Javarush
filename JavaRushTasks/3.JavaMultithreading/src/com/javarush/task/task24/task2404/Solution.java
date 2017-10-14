@@ -1,38 +1,32 @@
 package com.javarush.task.task24.task2404;
 
-/*
+import com.javarush.task.task24.task2404.HasHeight;
+import com.javarush.task.task24.task2404.HasWidth;
+import com.javarush.task.task24.task2404.Point;
+
+/* 
 Рефакторинг Rectangle
 */
 public class Solution {
     public static void main(String[] args) {
         Rectangle rectangle = new Rectangle(1, 2, 3, 4);
-        System.out.println(castToHasHeight(rectangle));
-        System.out.println(castToHasWidth(rectangle));
+        System.out.println(getHeight(rectangle));
+        System.out.println(getWidth(rectangle));
         /////////////////////expected//////////////////
-        System.out.println(castToHasHeight(rectangle.castToHasHeight()));
-        System.out.println(castToHasWidth(rectangle.castToHasWidth()));
+        //System.out.println(getHeight(rectangle.castToHasHeight()));
+        //System.out.println(getWidth(rectangle.castToHasWidth()));
     }
 
-    public static HasHeight castToHasHeight(final Rectangle rectangle) {
-        return new HasHeight() {
-            @Override
-            public double getHeight() {
-                return Math.abs(rectangle.point1.getY() - rectangle.point2.getY());
-            }
-        };
+    public static double getHeight(HasHeight rectangle) {
+        return rectangle.getHeight();
     }
 
-    public static HasWidth castToHasWidth(final Rectangle rectangle) {
-       return new HasWidth() {
-           @Override
-           public double getWidth() {
-               return Math.abs(rectangle.point1.getX() - rectangle.point2.getX());
-           }
-       };
+    public static double getWidth(HasWidth rectangle) {
+        return rectangle.getWidth();
     }
 
 
-    public static class Rectangle {
+    public static class Rectangle implements HasHeight, HasWidth{
         private Point point1;
         private Point point2;
 
@@ -41,12 +35,12 @@ public class Solution {
             point2 = new Point(x2, y2);
         }
 
-        public Rectangle castToHasHeight() {
-            return this;
+        public double getHeight() {
+            return Math.abs(point1.getY() - point2.getY());
         }
 
-        public Rectangle castToHasWidth() {
-            return this;
+        public double getWidth() {
+            return Math.abs(point1.getX() - point2.getX());
         }
     }
 }
